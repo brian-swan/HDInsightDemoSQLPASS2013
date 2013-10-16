@@ -1,0 +1,15 @@
+﻿The Sqoop query below moves data from a "folder" (called output) in Windows Azure Blob Storage 
+to a table in Windows Azure SQL Database. The command is meant to be run from the sqoop command 
+line in an HDInsight cluster. To use the command, you will need to provide the following:
+- server_id
+- database_username
+- password
+- database_name
+- table_name
+- your_container
+- your_storage_account_name 
+
+sqoop.cmd export --connect "jdbc:sqlserver://server_id.database.windows.net;username=database_username@server_id;password=password;database=database_name" --table table_name --export-dir "wasb://your_container@your_storage_account_name.blob.core.windows.net/output" --fields-terminated-by \001 --lines-terminated-by \010
+
+Note that the schema of your database must match the "schema" of your data in blob storage. For this demo, that meant having an nvarchar primary key (airport),
+an nvarchar column (city), and a float column (avg_weather_delay).

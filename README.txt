@@ -9,7 +9,7 @@ Prerequisites:
 1. You have a Windows Azure account.
 2. You have installed the HDInsight Developer Preview ("OneBox") via the Web Platform Installer: http://www.microsoft.com/web/downloads/platform.aspx
 3. You have installed the Windows Azure PowerShell cmdlets and configured them for your account: http://www.windowsazure.com/en-us/manage/install-and-configure-windows-powershell/
-4. You have installed the HDInsight PowerShell cmdlets: 
+4. You have installed the HDInsight PowerShell cmdlets: http://go.microsoft.com/fwlink/?LinkID=325563&clcid=0x409
 5. Create a Windows Azure Storage account and a container in the account: http://www.windowsazure.com/en-us/manage/services/storage/how-to-create-a-storage-account/
 6. Create a Windows Azure SQL database: http://www.windowsazure.com/en-us/manage/services/sql-databases/getting-started-w-sql-databases/
 
